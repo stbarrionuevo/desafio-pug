@@ -1,0 +1,17 @@
+extends layout.pug  
+block form
+  
+  
+  form(action="/products" method="POST")
+    div.form-group
+      label(for="name") Name 
+      input#name.form-control(type="text", name="name")
+    div.form-group
+      label(for="price") Price
+      input#price.form-control(type="number", name="price")
+    div.form-group
+      label(for="URL") Url
+      input#picture.form-control(type="text", name="URL")
+
+    button(type="submit") Submit
+
